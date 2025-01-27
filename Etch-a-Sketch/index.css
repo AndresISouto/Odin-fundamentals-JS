@@ -5,16 +5,16 @@
     flex-wrap: wrap;
     height: 98vh;
     width: 98vw;
-    /* background-color: green; */
+    background-color: black; 
     
 }
 .caja{
-    width: 6vw;
-    height: 6vh;
-     border: 1px solid black; 
+    /* width: 6vw; */
+    /* height: 6vh; */
+    border: 1px solid black; 
     box-sizing: border-box;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 .caja:hover{
-    background-color: green;
+    background-color: green !important; 
 }
