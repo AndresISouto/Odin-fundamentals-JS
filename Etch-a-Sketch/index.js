@@ -23,7 +23,7 @@ function grid(number){
         color3 = Math.floor(Math.random()*256);
         caja.style.backgroundColor = `rgb(${color1},${color2},${color3})`;
         caja.classList.toggle("caja");
-        caja.addEventListener("mousemove",()=>{
+        caja.addEventListener("mouseover",()=>{
             opacity -= 0.1;
             caja.style.opacity = `${opacity}`;
         })
