@@ -37,7 +37,8 @@ let primerElemento = "";
 let segundoElemento = "";
 let operando = "";
 let operacion;
-
+let decimalPrimero = false;
+let decimalSegundo = false;
 
 // LOGICA
 // (\(\         (\(\            (\(\
@@ -224,8 +225,8 @@ C.addEventListener("click", () => {
 
 igual.addEventListener("click",() => {
     if (!primerElementoVacio() && !segundoElementoVacio() && !operandoVacio()) {
-         primerElemento = parseInt(primerElemento);
-         segundoElemento = parseInt(segundoElemento);
+         primerElemento = parseFloat(primerElemento);
+         segundoElemento = parseFloat(segundoElemento);
          operando = operando.trim();
          switch (operando) {
             case "+":
@@ -265,6 +266,24 @@ igual.addEventListener("click",() => {
                 pantalla.textContent = "Operación no válida";
                 break;
          }
+         decimalPrimero = false;
+         decimalSegundo= false;
     }
+
+})
+punto.addEventListener("click",() => {
+    if (!decimalPrimero && operandoVacio() && !primerElementoVacio()) {
+        primerElemento += ".";
+        operacion = primerElemento;
+        pantalla.textContent = operacion;
+        decimalPrimero = true
+    }
+    if(!decimalSegundo && !segundoElementoVacio()){
+        segundoElemento += ".";
+        operacion = segundoElemento;
+        pantalla.textContent = operacion;
+        decimalSegundo = true
+    }
+
 
 })
