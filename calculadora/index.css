@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora{
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+}
+.calculadora p{
+    background-color: lightgray;
+    border-radius: 8px;
+    text-align: right;
+}
+.iz{
+    border-radius: 1em;
+    border: 1px solid black;
+    color: white;
+    background-color: grey;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 33%;
+    height: 16%;
+}
+#contenedorIZ{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.igual{
+    box-sizing: border-box;
+    width: 25%;
+    border-radius: 1em;
+    background-color: goldenrod;
+}
+.botones{
+    display: flex;
+}
