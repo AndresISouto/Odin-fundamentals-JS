@@ -1,0 +1,95 @@
+@font-face {
+    font-family:norse ;
+    src: url(fuentes/Norse-Bold.otf);
+}
+body{
+    display: flex;
+}
+
+header{
+    height: 100vh;
+    width: 30vw;
+    background-image: url(IMG/farola.avif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: center;
+
+    
+}
+header div{
+    background-color: #00000080;
+    /* opacity: 0.5; */
+    height: 20%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 30%;
+}
+header img{
+    height: 100%;
+    width: 20%;
+}
+header h1{
+    color: white;
+   font-family: norse; 
+   font-size: 5rem;
+}
+#derecha {
+    height: 100vh;
+    width: 70vw;
+    /* background-color: aqua;*/
+}
+main{
+    margin: 2rem;
+}
+main p{
+    text-align: center;
+
+}
+section{
+    height: 50%;
+    background-color: #ebe8e5;   
+}
+#inputs{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+#inputs div{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 6%;
+
+    width: 30%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+article{
+    margin: 2rem;
+}
+article button{
+    color: white;
+    background-color: rgb(99, 153, 20);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+input:user-invalid{
+border: 1px solid red;
+}
